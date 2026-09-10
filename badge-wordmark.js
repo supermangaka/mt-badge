@@ -7,8 +7,9 @@
   var PORTFOLIO_URL = ds.url || "https://meteor-developer.vercel.app";
   var POSITION = ds.position || "bottom-right"; // top-left | top-right | bottom-left | bottom-right
   var HEIGHT = ds.height || "40"; // высота плашки в px, ширина считается по пропорциям картинки
-  // путь до svg рядом со скриптом — если файл лежит в другом месте, переопределите data-logo="/путь/к/файлу.svg"
-  var LOGO_SRC = ds.logo || "meteor-wordmark-transparent.svg";
+  // путь до svg — по умолчанию грузится с jsDelivr CDN из репозитория mt-badge;
+  // переопределить можно через data-logo="/другой/путь.svg"
+  var LOGO_SRC = ds.logo || "https://cdn.jsdelivr.net/gh/supermangaka/mt-badge@main/meteor-wordmark-transparent.svg";
 
   var posMap = {
     "top-left": { top: "20px", left: "20px" },
